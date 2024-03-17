@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./connect_to_",
+        "./connect_to_"
+    ]
+}

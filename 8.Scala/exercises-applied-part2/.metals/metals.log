@@ -1,0 +1,770 @@
+2024.03.08 14:58:51 INFO  Started: Metals version 1.2.2 in folders '/Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2' for client Visual Studio Code 1.87.1.
+14:58:51.650 [pool-1-thread-2] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+14:58:51.651 [pool-1-thread-2] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+14:58:51.651 [pool-1-thread-2] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+14:58:51.652 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+14:58:51.652 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0 ...
+14:58:51.652 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+14:58:51.652 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+14:58:51.652 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0 ...
+14:58:51.652 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/Users/cellarzero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+14:58:51.654 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+14:58:51.654 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+14:58:51.654 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+14:58:51.654 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+14:58:51.654 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+14:58:51.654 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+14:58:51.655 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:58:51.655 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+14:58:51.656 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+14:58:51.656 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+14:58:51.656 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+14:58:51.707 [pool-1-thread-2] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/metals (H2 2.2)
+14:58:51.707 [pool-1-thread-2] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+14:58:51.707 [pool-1-thread-2] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+14:58:51.707 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+14:58:51.707 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+14:58:51.709 [pool-1-thread-2] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+14:58:51.710 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+14:58:51.710 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:58:51.714 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+14:58:51.715 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:58:51.718 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+14:58:51.719 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:58:51.719 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+14:58:51.719 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+14:58:51.719 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+14:58:51.719 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+14:58:51.719 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:58:51.719 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+14:58:51.719 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+14:58:51.719 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+14:58:51.720 [pool-1-thread-2] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+14:58:51.721 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.006s)
+14:58:51.722 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+14:58:51.723 [pool-1-thread-2] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+14:58:51.724 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+14:58:51.728 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+14:58:51.728 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+14:58:51.729 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+14:58:51.731 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.731 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+14:58:51.732 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.732 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+14:58:51.735 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+14:58:51.735 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+14:58:51.736 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+14:58:51.737 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+14:58:51.737 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+14:58:51.738 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+14:58:51.738 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+14:58:51.739 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+14:58:51.739 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+14:58:51.739 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+14:58:51.740 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.740 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+14:58:51.741 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.741 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+14:58:51.742 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.742 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+14:58:51.742 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.742 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+14:58:51.743 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.743 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+14:58:51.744 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+14:58:51.746 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+14:58:51.747 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+14:58:51.747 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+14:58:51.748 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+14:58:51.748 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+14:58:51.748 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.748 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+14:58:51.749 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+14:58:51.750 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+14:58:51.750 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+14:58:51.751 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+14:58:51.751 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+14:58:51.751 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+14:58:51.752 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+14:58:51.752 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+14:58:51.755 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.755 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+14:58:51.758 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.758 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+14:58:51.759 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.759 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+14:58:51.759 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+14:58:51.760 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+14:58:51.761 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+14:58:51.762 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+14:58:51.762 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+14:58:51.762 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+14:58:51.763 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+14:58:51.763 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+14:58:51.764 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+14:58:51.767 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.013s)
+14:58:51.774 [pool-1-thread-2] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 34 of 104M
+2024.03.08 14:58:51 WARN  Build server is not auto-connectable.
+2024.03.08 14:58:54 INFO  running '/opt/homebrew/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.08 14:58:54 ERROR [info] [launcher] getting org.scala-sbt sbt 1.6.2  (this may take some time)...
+2024.03.08 14:58:54 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/metals.sbt
+2024.03.08 14:58:54 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/project/metals.sbt
+2024.03.08 14:58:54 INFO  skipping build import with status 'Started'
+2024.03.08 14:58:57 INFO  no build target found for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.08 14:59:04 ERROR [info] [launcher] getting Scala 2.12.15 (for sbt)...
+2024.03.08 14:59:05 INFO  [info] welcome to sbt 1.6.2 (Oracle Corporation Java 17.0.10)
+2024.03.08 14:59:06 INFO  [info] loading settings for project exercises-applied-part2-build-build from metals.sbt ...
+2024.03.08 14:59:06 INFO  [info] loading project definition from /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/project
+2024.03.08 14:59:08 INFO  [info] loading settings for project exercises-applied-part2-build from metals.sbt ...
+2024.03.08 14:59:08 INFO  [info] loading project definition from /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project
+2024.03.08 14:59:12 INFO  [success] Generated .bloop/exercises-applied-part2-build.json
+2024.03.08 14:59:12 INFO  [success] Total time: 5 s, completed 08-Mar-2024, 2:59:13 pm
+2024.03.08 14:59:13 ERROR /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/build.sbt:3: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash
+2024.03.08 14:59:13 ERROR version in ThisBuild := "1.0-SNAPSHOT"
+2024.03.08 14:59:13 ERROR         ^
+2024.03.08 14:59:13 ERROR /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/build.sbt:5: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash
+2024.03.08 14:59:13 ERROR scalaVersion in ThisBuild := "2.12.17"
+2024.03.08 14:59:13 ERROR              ^
+2024.03.08 14:59:13 ERROR /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/build.sbt:7: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash
+2024.03.08 14:59:13 ERROR scalacOptions in ThisBuild += "-deprecation"
+2024.03.08 14:59:13 ERROR               ^
+2024.03.08 14:59:13 ERROR /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/build.sbt:9: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash
+2024.03.08 14:59:13 ERROR libraryDependencies in ThisBuild ++= Seq(
+2024.03.08 14:59:13 ERROR                     ^
+2024.03.08 14:59:13 INFO  [info] loading settings for project exercises-applied-part2 from build.sbt ...
+2024.03.08 14:59:13 INFO  [info] set current project to Scala-Applied-Exercises (in build file:/Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/)
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module11.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/exercises-applied-part2-test.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module09-test.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module09.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module11-test.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/exercises-applied-part2.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module10.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module10-test.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module07.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module07-test.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module08-test.json
+2024.03.08 14:59:33 INFO  [success] Generated .bloop/module08.json
+2024.03.08 14:59:33 INFO  [success] Total time: 19 s, completed 08-Mar-2024, 2:59:33 pm
+2024.03.08 14:59:33 INFO  time: ran 'sbt bloopInstall' in 38s
+2024.03.08 14:59:33 INFO  Attempting to connect to the build server...
+2024.03.08 14:59:33 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.08 14:59:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.08 14:59:37 INFO  Attempting to connect to the build server...
+2024.03.08 14:59:37 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.08 14:59:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.08 14:59:38 INFO  time: Connected to build server in 5.79s
+2024.03.08 14:59:38 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.08 14:59:47 INFO  time: indexed workspace in 8.58s
+2024.03.08 14:59:48 INFO  compiling module07-test (5 scala sources)
+2024.03.08 14:59:57 INFO  time: compiled module07-test in 9.08s
+2024.03.08 15:00:09 INFO  Running List(/Users/cellarzero/Library/Application Support/Coursier/bin/scala-cli, bsp, /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts)
+2024.03.08 15:00:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.08 15:00:09 INFO  Connected to Scala CLI server v1.1.3
+2024.03.08 15:00:10 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 15:00:11 INFO  time: indexed workspace in 1.54s
+2024.03.08 15:00:13 INFO  time: compiled scripts_f4dd477a3a in 3.22s
+2024.03.08 15:00:13 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 15:00:13 INFO  time: compiled scripts_f4dd477a3a in 3ms
+2024.03.08 15:00:13 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 15:00:13 INFO  time: compiled scripts_f4dd477a3a in 4ms
+2024.03.08 15:00:13 INFO  Scala CLI started for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts
+2024.03.08 15:01:53 INFO  running '/opt/homebrew/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.08 15:01:55 INFO  [info] welcome to sbt 1.6.2 (Oracle Corporation Java 17.0.10)
+2024.03.08 15:01:55 INFO  [info] loading settings for project exercises-applied-part2-build-build from metals.sbt ...
+2024.03.08 15:01:55 INFO  [info] loading project definition from /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/project
+2024.03.08 15:01:56 INFO  [info] loading settings for project exercises-applied-part2-build from metals.sbt ...
+2024.03.08 15:01:56 INFO  [info] loading project definition from /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project
+2024.03.08 15:01:56 INFO  [success] Generated .bloop/exercises-applied-part2-build.json
+2024.03.08 15:01:56 INFO  [success] Total time: 1 s, completed 08-Mar-2024, 3:01:57 pm
+2024.03.08 15:01:57 INFO  [info] loading settings for project exercises-applied-part2 from build.sbt ...
+2024.03.08 15:01:57 INFO  [info] set current project to Scala-Applied-Exercises (in build file:/Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/)
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module07.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module08-test.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module11-test.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module07-test.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module08.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/exercises-applied-part2.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/exercises-applied-part2-test.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module11.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module09.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module09-test.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module10-test.json
+2024.03.08 15:01:57 INFO  [success] Generated .bloop/module10.json
+2024.03.08 15:01:57 INFO  [success] Total time: 0 s, completed 08-Mar-2024, 3:01:58 pm
+2024.03.08 15:01:58 INFO  time: ran 'sbt bloopInstall' in 5.02s
+2024.03.08 15:01:58 INFO  Disconnecting from Bloop session...
+2024.03.08 15:01:58 INFO  Shut down connection with build server.
+2024.03.08 15:01:58 INFO  Shut down connection with build server.
+2024.03.08 15:01:58 INFO  Shut down connection with build server.
+2024.03.08 15:01:58 INFO  Attempting to connect to the build server...
+2024.03.08 15:01:58 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.08 15:01:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.08 15:01:58 INFO  Attempting to connect to the build server...
+2024.03.08 15:01:58 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.08 15:01:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.08 15:01:58 INFO  time: Connected to build server in 52ms
+2024.03.08 15:01:58 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.08 15:01:59 INFO  time: indexed workspace in 1.05s
+2024.03.08 15:01:59 INFO  Running List(/Users/cellarzero/Library/Application Support/Coursier/bin/scala-cli, bsp, /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts)
+2024.03.08 15:01:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.08 15:01:59 INFO  Connected to Scala CLI server v1.1.3
+2024.03.08 15:02:00 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 15:02:00 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 15:02:02 INFO  no build target found for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/07-final.sc. Using presentation compiler with project's scala-library version: 2.12.17
+2024.03.08 15:02:02 INFO  time: code lens generation in 2.43s
+2024.03.08 15:02:03 INFO  time: indexed workspace in 2.62s
+2024.03.08 15:02:03 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 15:02:03 INFO  time: compiled scripts_f4dd477a3a in 0.53s
+2024.03.08 15:02:04 INFO  Scala CLI started for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts
+error: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/.tmp/.metals/.tmp/Main-2014901918590466.scala is not a file
+2024.03.08 15:02:03 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 15:02:03 INFO  time: compiled scripts_f4dd477a3a in 0.17s
+2024.03.08 15:15:47 INFO  Shutting down server
+2024.03.08 15:15:47 INFO  shutting down Metals
+2024.03.08 15:15:47 INFO  Shut down connection with build server.
+2024.03.08 15:15:47 INFO  Shut down connection with build server.
+2024.03.08 15:15:47 INFO  Shut down connection with build server.
+2024.03.08 15:15:47 INFO  Exiting server
+2024.03.08 18:58:45 INFO  Started: Metals version 1.2.2 in folders '/Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2' for client Visual Studio Code 1.87.1.
+18:58:45.883 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+18:58:45.885 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+18:58:45.885 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+18:58:45.886 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+18:58:45.886 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0 ...
+18:58:45.886 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+18:58:45.886 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+18:58:45.886 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0 ...
+18:58:45.887 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/Users/cellarzero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+18:58:45.891 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+18:58:45.892 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+18:58:45.892 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+18:58:45.892 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+18:58:45.892 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+18:58:45.892 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+18:58:45.895 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:58:45.895 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+18:58:45.895 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+18:58:45.895 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+18:58:45.895 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+18:58:45.953 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/metals (H2 2.2)
+18:58:45.953 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+18:58:45.953 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+18:58:45.953 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+18:58:45.953 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+18:58:45.956 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+18:58:45.957 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+18:58:45.957 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:58:45.963 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+18:58:45.965 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:58:45.973 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+18:58:45.973 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:58:45.973 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+18:58:45.973 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+18:58:45.973 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+18:58:45.973 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+18:58:45.973 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:58:45.973 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+18:58:45.974 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+18:58:45.974 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+18:58:45.980 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.016s)
+18:58:45.981 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+18:58:45.983 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+18:58:45.986 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+18:58:45.994 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 34 of 104M
+Mar 08, 2024 6:58:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2024.03.08 18:58:46 INFO  skipping build import with status 'Installed'
+2024.03.08 18:58:46 INFO  Attempting to connect to the build server...
+2024.03.08 18:58:46 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.08 18:58:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.08 18:58:49 INFO  Attempting to connect to the build server...
+2024.03.08 18:58:49 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.08 18:58:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.08 18:58:49 INFO  time: Connected to build server in 2.82s
+2024.03.08 18:58:49 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.08 18:58:49 INFO  time: Imported build in 0.11s
+2024.03.08 18:58:49 INFO  no build target found for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/07-final.sc. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.08 18:58:52 INFO  time: indexed workspace in 2.07s
+2024.03.08 18:58:52 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/07-final.sc
+2024.03.08 18:58:53 INFO  Running List(/Users/cellarzero/Library/Application Support/Coursier/bin/scala-cli, bsp, /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts)
+2024.03.08 18:58:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.08 18:58:53 INFO  Scala CLI: Starting compilation server
+2024.03.08 18:58:55 INFO  time: code lens generation in 2.9s
+2024.03.08 18:58:55 INFO  time: code lens generation in 2.14s
+2024.03.08 18:58:55 INFO  Connected to Scala CLI server v1.1.3
+2024.03.08 18:58:55 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 18:58:56 INFO  time: indexed workspace in 1.52s
+2024.03.08 18:58:58 INFO  time: compiled scripts_f4dd477a3a in 2.25s
+2024.03.08 18:58:58 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 18:58:58 INFO  time: compiled scripts_f4dd477a3a in 0.14s
+2024.03.08 18:58:58 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.08 18:58:58 INFO  time: compiled scripts_f4dd477a3a in 0.39s
+2024.03.08 18:58:58 INFO  Scala CLI started for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts
+error: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/.tmp/.metals/.tmp/Main-6995730125006644946.scala is not a file
+2024.03.08 19:00:05 INFO  Shutting down server
+2024.03.08 19:00:05 INFO  shutting down Metals
+2024.03.08 19:00:05 INFO  Shut down connection with build server.
+2024.03.08 19:00:05 INFO  Shut down connection with build server.
+2024.03.08 19:00:05 INFO  Shut down connection with build server.
+2024.03.08 19:00:05 INFO  Exiting server
+2024.03.12 15:18:10 INFO  Started: Metals version 1.2.2 in folders '/Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2' for client Visual Studio Code 1.87.1.
+15:18:10.342 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+15:18:10.343 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+15:18:10.343 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+15:18:10.344 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+15:18:10.344 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0 ...
+15:18:10.344 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+15:18:10.344 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+15:18:10.344 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0 ...
+15:18:10.344 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/Users/cellarzero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+15:18:10.346 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+15:18:10.346 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+15:18:10.346 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+15:18:10.346 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+15:18:10.346 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+15:18:10.346 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+15:18:10.347 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:18:10.348 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+15:18:10.348 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+15:18:10.348 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+15:18:10.348 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+15:18:10.399 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/metals (H2 2.2)
+15:18:10.399 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+15:18:10.400 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+15:18:10.400 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+15:18:10.400 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+15:18:10.402 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+15:18:10.402 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+15:18:10.402 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:18:10.405 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+15:18:10.406 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:18:10.410 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:18:10.415 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.009s)
+15:18:10.416 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+15:18:10.418 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+15:18:10.421 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+15:18:10.428 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 34 of 104M
+2024.03.12 15:18:10 INFO  skipping build import with status 'Installed'
+2024.03.12 15:18:10 INFO  Attempting to connect to the build server...
+2024.03.12 15:18:10 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.12 15:18:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:18:12 INFO  Attempting to connect to the build server...
+2024.03.12 15:18:12 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.12 15:18:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:18:12 INFO  time: Connected to build server in 2.31s
+2024.03.12 15:18:12 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.12 15:18:12 INFO  time: Imported build in 0.13s
+2024.03.12 15:18:14 INFO  no build target found for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/07-final.sc. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.12 15:18:16 INFO  time: indexed workspace in 1.54s
+2024.03.12 15:18:16 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/07-final.sc
+2024.03.12 15:18:18 INFO  Running List(/Users/cellarzero/Library/Application Support/Coursier/bin/scala-cli, bsp, /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts)
+2024.03.12 15:18:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:18:18 INFO  Scala CLI: Starting compilation server
+2024.03.12 15:18:19 INFO  time: code lens generation in 2.83s
+2024.03.12 15:18:19 INFO  time: code lens generation in 2.05s
+2024.03.12 15:18:19 INFO  Connected to Scala CLI server v1.1.3
+2024.03.12 15:18:20 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.12 15:18:21 INFO  time: indexed workspace in 1.47s
+2024.03.12 15:18:22 INFO  time: compiled scripts_f4dd477a3a in 1.93s
+2024.03.12 15:18:22 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.12 15:18:22 INFO  time: compiled scripts_f4dd477a3a in 0.41s
+2024.03.12 15:18:22 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+error: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/.tmp/.metals/.tmp/Main-7335199120112557702.scala is not a file
+2024.03.12 15:18:22 INFO  time: compiled scripts_f4dd477a3a in 0.36s
+2024.03.12 15:18:23 INFO  Scala CLI started for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts
+2024.03.12 15:18:55 INFO  time: code lens generation in 1.14s
+2024.03.12 15:19:22 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:27 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:28 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:28 INFO  skipping build import with status 'Installed'
+2024.03.12 15:19:28 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:29 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:30 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:31 INFO  skipping build import with status 'Installed'
+2024.03.12 15:19:31 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:31 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:32 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:32 INFO  skipping build import with status 'Installed'
+2024.03.12 15:19:32 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:32 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:35 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:36 INFO  skipping build import with status 'Installed'
+2024.03.12 15:19:36 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:19:36 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala
+2024.03.12 15:21:32 INFO  running '/opt/homebrew/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.12 15:21:33 INFO  [info] welcome to sbt 1.6.2 (Oracle Corporation Java 17.0.10)
+2024.03.12 15:21:33 INFO  [info] loading settings for project exercises-applied-part2-build-build from metals.sbt ...
+2024.03.12 15:21:33 INFO  [info] loading project definition from /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/project
+2024.03.12 15:21:34 INFO  [info] loading settings for project exercises-applied-part2-build from metals.sbt ...
+2024.03.12 15:21:34 INFO  [info] loading project definition from /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project
+2024.03.12 15:21:34 INFO  [success] Generated .bloop/exercises-applied-part2-build.json
+2024.03.12 15:21:35 INFO  [success] Total time: 1 s, completed 12-Mar-2024, 3:21:35 pm
+2024.03.12 15:21:35 INFO  [info] loading settings for project exercises-applied-part2 from build.sbt ...
+2024.03.12 15:21:35 INFO  [info] set current project to Scala-Applied-Exercises (in build file:/Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/)
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module07-test.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module10-test.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module07.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/exercises-applied-part2.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/exercises-applied-part2-test.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module11-test.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module11.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module10.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module08.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module08-test.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module09.json
+2024.03.12 15:21:35 INFO  [success] Generated .bloop/module09-test.json
+2024.03.12 15:21:35 INFO  [success] Total time: 0 s, completed 12-Mar-2024, 3:21:35 pm
+2024.03.12 15:21:35 INFO  time: ran 'sbt bloopInstall' in 3.88s
+2024.03.12 15:21:35 INFO  Disconnecting from Bloop session...
+2024.03.12 15:21:35 INFO  Shut down connection with build server.
+2024.03.12 15:21:35 INFO  Shut down connection with build server.
+2024.03.12 15:21:35 INFO  Shut down connection with build server.
+2024.03.12 15:21:35 INFO  Attempting to connect to the build server...
+2024.03.12 15:21:35 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.12 15:21:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:21:36 INFO  Attempting to connect to the build server...
+2024.03.12 15:21:36 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.12 15:21:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:21:36 INFO  time: Connected to build server in 52ms
+2024.03.12 15:21:36 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.12 15:21:37 INFO  time: indexed workspace in 1.07s
+2024.03.12 15:21:37 INFO  Running List(/Users/cellarzero/Library/Application Support/Coursier/bin/scala-cli, bsp, /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts)
+2024.03.12 15:21:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:21:37 INFO  Connected to Scala CLI server v1.1.3
+2024.03.12 15:21:37 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.12 15:21:38 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.12 15:21:39 INFO  time: indexed workspace in 1.06s
+2024.03.12 15:21:39 INFO  Scala CLI started for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts
+2024.03.12 15:21:40 INFO  compiling module11 (2 scala sources)
+2024.03.12 15:21:40 INFO  compiling module08-test (5 scala sources)
+2024.03.12 15:21:40 INFO  compiling module09-test (5 scala sources)
+2024.03.12 15:21:40 INFO  compiling module07-test (5 scala sources)
+2024.03.12 15:21:40 INFO  compiling module10-test (16 scala sources)
+error: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/.tmp/.metals/.tmp/Main2696255901035412190.scala is not a file
+2024.03.12 15:21:43 INFO  compiling exercises-applied-part2 (1 scala source)
+2024.03.12 15:21:43 INFO  compiling module11-test (5 scala sources)
+2024.03.12 15:21:43 INFO  time: compiled module11 in 3.06s
+2024.03.12 15:21:43 INFO  time: compiled exercises-applied-part2 in 96ms
+2024.03.12 15:21:43 INFO  time: compiled module09-test in 3.91s
+2024.03.12 15:21:43 INFO  time: compiled module08-test in 3.92s
+2024.03.12 15:21:43 INFO  time: compiled module10-test in 3.95s
+2024.03.12 15:21:44 INFO  time: compiled module07-test in 4.05s
+2024.03.12 15:21:46 INFO  time: compiled module11-test in 3.02s
+Mar 12, 2024 3:22:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 121
+2024.03.12 15:22:14 INFO  compiling scripts_f4dd477a3a (9 scala sources)
+2024.03.12 15:22:14 INFO  time: compiled scripts_f4dd477a3a in 0.18s
+Mar 12, 2024 3:23:36 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.03.12 15:23:40 INFO  Disconnecting from Bloop session...
+2024.03.12 15:23:40 INFO  Shut down connection with build server.
+2024.03.12 15:23:42 INFO  Shutting down server
+2024.03.12 15:23:42 INFO  shutting down Metals
+2024.03.12 15:23:42 INFO  Exiting server
+2024.03.12 15:23:46 INFO  Started: Metals version 1.2.2 in folders '/Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2' for client Visual Studio Code 1.87.1.
+15:23:46.745 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+15:23:46.746 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+15:23:46.746 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+15:23:46.747 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+15:23:46.747 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+15:23:46.747 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+15:23:46.747 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+15:23:46.747 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+15:23:46.747 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/Users/cellarzero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+15:23:46.748 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+15:23:46.748 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+15:23:46.748 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+15:23:46.748 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+15:23:46.748 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+15:23:46.748 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+15:23:46.750 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:46.750 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+15:23:46.750 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+15:23:46.750 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+15:23:46.750 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+15:23:46.806 [pool-1-thread-4] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/metals (H2 2.2)
+15:23:46.806 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+15:23:46.806 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+15:23:46.807 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+15:23:46.807 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+15:23:46.809 [pool-1-thread-4] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+15:23:46.809 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+15:23:46.809 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:46.812 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+15:23:46.814 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:23:46.818 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:23:46.823 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.010s)
+15:23:46.824 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+15:23:46.826 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+15:23:46.828 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+15:23:46.835 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 71 of 104M
+2024.03.12 15:23:46 INFO  Attempting to connect to the build server...
+2024.03.12 15:23:46 INFO  skipping build import with status 'Installed'
+2024.03.12 15:23:46 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.12 15:23:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:23:49 INFO  no build target found for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/01-classes-and-abstract.sc. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.12 15:23:49 INFO  Attempting to connect to the build server...
+2024.03.12 15:23:49 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.12 15:23:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:23:49 INFO  time: Connected to build server in 2.97s
+2024.03.12 15:23:49 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.12 15:23:49 INFO  time: Imported build in 0.11s
+Mar 12, 2024 3:23:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2024.03.12 15:23:52 INFO  no build target found for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/01-classes-and-abstract.sc. Using presentation compiler with project's scala-library version: 2.12.17
+2024.03.12 15:23:53 INFO  time: indexed workspace in 3.21s
+2024.03.12 15:23:53 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/01-classes-and-abstract.sc
+2024.03.12 15:23:54 INFO  Running List(/Users/cellarzero/Library/Application Support/Coursier/bin/scala-cli, bsp, /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts)
+2024.03.12 15:23:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:23:54 INFO  Scala CLI: Downloading https://github.com/coursier/jvm-index/raw/master/index.json
+2024.03.12 15:23:55 INFO  Scala CLI: Downloaded https://github.com/coursier/jvm-index/raw/master/index.json
+2024.03.12 15:23:55 INFO  Scala CLI: Downloading https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz
+2024.03.12 15:24:01 INFO  running '/opt/homebrew/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.12 15:24:01 INFO  copying runtime jar...
+2024.03.12 15:24:01 INFO  Scala CLI: Still downloading:
+2024.03.12 15:24:01 INFO  Scala CLI: https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz (23.67 %, 45547520 / 192417649)
+2024.03.12 15:24:01 INFO  Scala CLI: 
+2024.03.12 15:24:06 INFO  [info] welcome to sbt 1.6.2 (Oracle Corporation Java 11.0.21)
+2024.03.12 15:24:06 INFO  [info] loading settings for project exercises-applied-part2-build-build from metals.sbt ...
+2024.03.12 15:24:06 INFO  [info] loading project definition from /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/project
+2024.03.12 15:24:07 INFO  Scala CLI: Still downloading:
+2024.03.12 15:24:07 INFO  Scala CLI: https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz (52.57 %, 101154816 / 192417649)
+2024.03.12 15:24:07 INFO  Scala CLI: 
+2024.03.12 15:24:08 INFO  [info] loading settings for project exercises-applied-part2-build from metals.sbt ...
+2024.03.12 15:24:08 INFO  [info] loading project definition from /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/exercises-applied-part2-build.json
+2024.03.12 15:24:09 INFO  [success] Total time: 1 s, completed 12-Mar-2024, 3:24:09 PM
+2024.03.12 15:24:09 INFO  [info] loading settings for project exercises-applied-part2 from build.sbt ...
+2024.03.12 15:24:09 INFO  [info] set current project to Scala-Applied-Exercises (in build file:/Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/)
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module09.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module10-test.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module09-test.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module10.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module07-test.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module11-test.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/exercises-applied-part2-test.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/exercises-applied-part2.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module11.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module07.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module08-test.json
+2024.03.12 15:24:09 INFO  [success] Generated .bloop/module08.json
+2024.03.12 15:24:09 INFO  [success] Total time: 0 s, completed 12-Mar-2024, 3:24:10 PM
+2024.03.12 15:24:10 INFO  time: ran 'sbt bloopInstall' in 8.82s
+2024.03.12 15:24:10 INFO  Disconnecting from Bloop session...
+2024.03.12 15:24:13 INFO  Scala CLI: Still downloading:
+2024.03.12 15:24:13 INFO  Scala CLI: https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz (67.68 %, 130236416 / 192417649)
+2024.03.12 15:24:13 INFO  Scala CLI: 
+2024.03.12 15:24:18 INFO  Scala CLI: Still downloading:
+2024.03.12 15:24:18 INFO  Scala CLI: https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz (70.21 %, 135102464 / 192417649)
+2024.03.12 15:24:18 INFO  Scala CLI: 
+2024.03.12 15:24:23 INFO  Scala CLI: Still downloading:
+2024.03.12 15:24:23 INFO  Scala CLI: https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz (78.11 %, 150306816 / 192417649)
+2024.03.12 15:24:23 INFO  Scala CLI: 
+2024.03.12 15:24:27 INFO  Scala CLI: Downloaded https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_mac_hotspot_17_35.tar.gz
+2024.03.12 15:24:33 INFO  Connected to Scala CLI server v1.1.3
+2024.03.12 15:24:33 INFO  Shut down connection with build server.
+2024.03.12 15:24:33 ERROR Error starting Scala CLI
+java.lang.Exception: No Scala CLI server running
+	at scala.meta.internal.metals.scalacli.ScalaCli.$anonfun$importBuild$10(ScalaCli.scala:144)
+	at scala.meta.internal.metals.scalacli.ScalaCli.ifConnectedOrElse(ScalaCli.scala:86)
+	at scala.meta.internal.metals.scalacli.ScalaCli.importBuild(ScalaCli.scala:144)
+	at scala.meta.internal.metals.scalacli.ScalaCli.$anonfun$importBuild$2(ScalaCli.scala:142)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.12 15:24:33 INFO  Shut down connection with build server.
+2024.03.12 15:24:33 INFO  Shut down connection with build server.
+2024.03.12 15:24:33 INFO  Attempting to connect to the build server...
+2024.03.12 15:24:33 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.12 15:24:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:24:33 INFO  Attempting to connect to the build server...
+2024.03.12 15:24:33 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/cellarzero/.bloop/bloop.json
+2024.03.12 15:24:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/project/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.12 15:24:33 INFO  time: Connected to build server in 63ms
+2024.03.12 15:24:33 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.12 15:24:34 INFO  compiling module11 (2 scala sources)
+2024.03.12 15:24:35 INFO  time: indexed workspace in 1.33s
+2024.03.12 15:24:35 INFO  no build target found for /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/01-classes-and-abstract.sc. Using presentation compiler with project's scala-library version: 2.12.17
+Mar 12, 2024 3:24:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 28
+2024.03.12 15:24:42 INFO  compiling exercises-applied-part2 (1 scala source)
+2024.03.12 15:24:42 INFO  time: compiled module11 in 8.02s
+2024.03.12 15:24:42 INFO  time: compiled exercises-applied-part2 in 69ms
+2024.03.12 15:24:42 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/module07/scripts/01-classes-and-abstract.sc
+2024.03.12 15:24:42 INFO  compiling module08-test (5 scala sources)
+2024.03.12 15:24:42 INFO  compiling module10-test (16 scala sources)
+2024.03.12 15:24:42 INFO  compiling module09-test (5 scala sources)
+2024.03.12 15:24:42 INFO  compiling module07-test (5 scala sources)
+2024.03.12 15:24:42 INFO  compiling exercises-applied-part2 (1 scala source)
+2024.03.12 15:24:42 INFO  compiling module11-test (5 scala sources)
+2024.03.12 15:24:42 INFO  time: compiled exercises-applied-part2 in 30ms
+Mar 12, 2024 3:24:42 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2024.03.12 15:24:44 INFO  time: compiled module07-test in 2.17s
+2024.03.12 15:24:44 INFO  time: compiled module09-test in 2.18s
+2024.03.12 15:24:44 INFO  time: compiled module08-test in 2.3s
+2024.03.12 15:24:44 INFO  time: compiled module10-test in 2.34s
+2024.03.12 15:24:46 INFO  time: compiled module11-test in 3.35s
+2024.03.12 15:24:50 INFO  file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala:1:1: stale bloop error: expected class or object definition
+print()
+^
+2024.03.12 15:24:50 INFO  file:///Users/cellarzero/Sigmoid%20Training/8.Scala/exercises-applied-part2/ex.scala:1:1: stale bloop error: expected class or object definition
+print()
+^
+2024.03.12 15:24:51 INFO  skipping build import with status 'Installed'
+2024.03.12 15:24:51 INFO  compiling exercises-applied-part2 (1 scala source)
+2024.03.12 15:24:51 INFO  time: compiled exercises-applied-part2 in 0.18s
+2024.03.12 15:24:57 INFO  Shutting down server
+2024.03.12 15:24:57 INFO  shutting down Metals
+2024.03.12 15:24:57 INFO  Shut down connection with build server.
+2024.03.12 15:24:57 INFO  Shut down connection with build server.
+2024.03.12 15:24:57 INFO  Exiting server

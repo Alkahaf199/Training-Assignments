@@ -1,0 +1,4 @@
+[debug] [module09-test] Classpath dependencies List()
+[debug] [module09-test] Dependencies from configurations List(module09)
+[debug] Bloop wrote the configuration of project 'module09-test' to '/Users/cellarzero/Sigmoid Training/8.Scala/exercises-applied-part2/.bloop/module09-test.json'
+[success] Generated .bloop/module09-test.json

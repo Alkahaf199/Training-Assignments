@@ -1,0 +1,564 @@
+2024.03.19 05:45:36 INFO  Started: Metals version 1.2.2 in folders '/Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment' for client Visual Studio Code 1.87.2.
+05:45:36.946 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+05:45:36.948 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+05:45:36.948 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+05:45:36.949 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+05:45:36.949 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+05:45:36.949 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+05:45:36.949 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+05:45:36.949 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+05:45:36.949 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/Users/cellarzero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+05:45:36.950 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+05:45:36.950 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+05:45:36.950 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+05:45:36.950 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+05:45:36.950 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+05:45:36.950 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+05:45:36.952 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+05:45:36.952 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+05:45:36.957 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+05:45:36.958 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+05:45:36.958 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+05:45:37.006 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/.metals/metals (H2 2.2)
+05:45:37.006 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+05:45:37.006 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+05:45:37.007 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+05:45:37.007 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+05:45:37.009 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+05:45:37.009 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+05:45:37.009 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+05:45:37.012 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+05:45:37.014 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+05:45:37.018 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+05:45:37.019 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+05:45:37.020 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.007s)
+05:45:37.021 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+05:45:37.022 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+05:45:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+05:45:37.026 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+05:45:37.026 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+05:45:37.026 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+05:45:37.028 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.028 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+05:45:37.029 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.029 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+05:45:37.032 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+05:45:37.032 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+05:45:37.033 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+05:45:37.033 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+05:45:37.033 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+05:45:37.034 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+05:45:37.034 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+05:45:37.034 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+05:45:37.035 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+05:45:37.035 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+05:45:37.035 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.035 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+05:45:37.036 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.036 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+05:45:37.036 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.036 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+05:45:37.037 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.037 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+05:45:37.037 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.037 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+05:45:37.038 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+05:45:37.041 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+05:45:37.042 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+05:45:37.042 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+05:45:37.042 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+05:45:37.042 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+05:45:37.042 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.042 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+05:45:37.043 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+05:45:37.045 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+05:45:37.045 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+05:45:37.045 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+05:45:37.046 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+05:45:37.046 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+05:45:37.046 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+05:45:37.046 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+05:45:37.048 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.048 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+05:45:37.050 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.050 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+05:45:37.050 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.050 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+05:45:37.051 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+05:45:37.052 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+05:45:37.052 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+05:45:37.052 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+05:45:37.053 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+05:45:37.053 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+05:45:37.053 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+05:45:37.053 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+05:45:37.054 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+05:45:37.057 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.006s)
+05:45:37.064 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 27 of 104M
+2024.03.19 05:45:37 WARN  no build tool detected in workspace '/Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.03.19 05:45:37 WARN  Build server is not auto-connectable.
+2024.03.19 05:45:40 INFO  no build target found for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question1.sc. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.19 05:45:41 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/question1.sc
+2024.03.19 05:45:41 INFO  time: code lens generation in 3.45s
+2024.03.19 05:46:55 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/question1.scala
+2024.03.19 05:46:55 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question1.sc
+2024.03.19 05:46:56 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/question1.scala
+2024.03.19 05:46:56 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/question1.scala
+2024.03.19 05:47:03 INFO  Running List(/Users/cellarzero/Library/Application Support/Coursier/bin/scala-cli, bsp, /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment)
+2024.03.19 05:47:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/.metals/bsp.trace.json or /Users/cellarzero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.19 05:47:05 INFO  Scala CLI: Checking https://github.com/coursier/jvm-index/raw/master/index.json
+2024.03.19 05:47:05 INFO  Scala CLI: Checked https://github.com/coursier/jvm-index/raw/master/index.json
+2024.03.19 05:47:05 INFO  Scala CLI: Downloading https://github.com/coursier/jvm-index/raw/master/index.json
+2024.03.19 05:47:05 INFO  Scala CLI: Downloaded https://github.com/coursier/jvm-index/raw/master/index.json
+2024.03.19 05:47:05 INFO  Scala CLI: Starting compilation server
+2024.03.19 05:47:10 INFO  Connected to Scala CLI server v1.1.3
+2024.03.19 05:47:10 ERROR No project associated with Uri(file:/Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/.scala-build/?id=ScalaMid%20Assignment_f4dd477a3a)
+2024.03.19 05:47:10 ERROR Empty build targets. Expected at least one build target identifier.
+2024.03.19 05:47:10 ERROR Empty build targets. Expected at least one build target identifier.
+2024.03.19 05:47:10 ERROR Empty build targets. Expected at least one build target identifier.
+2024.03.19 05:47:10 ERROR Empty build targets. Expected at least one build target identifier.
+2024.03.19 05:47:10 ERROR No project associated with Uri(file:/Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/.scala-build/?id=ScalaMid%20Assignment_f4dd477a3a-test)
+2024.03.19 05:47:12 INFO  time: indexed workspace in 1.77s
+2024.03.19 05:47:12 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/.metals/.tmp/Main-6060103755421323267.scala
+2024.03.19 05:47:14 INFO  no build target found for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question1.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.19 05:47:14 INFO  time: code lens generation in 1.42s
+2024.03.19 05:47:18 INFO  Scala CLI started for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment
+2024.03.19 05:47:18 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/question1.scala
+2024.03.19 05:47:18 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/question1.scala
+2024.03.19 05:47:20 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question1.scala
+2024.03.19 05:47:23 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question1.scala
+Mar 19, 2024 5:47:24 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.03.19 06:00:52 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:00:52 WARN  Could not find semantic tokens for: file:///Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/question2.scala
+2024.03.19 06:00:52 WARN  No build server connected
+2024.03.19 06:00:52 ERROR No project associated with Uri(file:/Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/.scala-build/?id=ScalaMid%20Assignment_f4dd477a3a)
+2024.03.19 06:00:52 ERROR No project associated with Uri(file:/Users/cellarzero/Sigmoid%20Training/8.Scala/ScalaMid%20Assignment/.scala-build/?id=ScalaMid%20Assignment_f4dd477a3a-test)
+2024.03.19 06:00:55 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:01:09 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+Mar 19, 2024 6:04:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 131
+2024.03.19 06:04:08 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:04:23 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:04:31 ERROR Failed to tokenize input for semantic tokens for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+scala.meta.tokenizers.TokenizeException: <input>:17: error: unclosed string interpolation
+    top5PlayersByRun.foreach(player => println(s"${player.name} - ${player.runs} runs\"))
+                                                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:249)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.19 06:04:32 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:04:57 ERROR Failed to tokenize input for semantic tokens for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+scala.meta.tokenizers.TokenizeException: <input>:17: error: unclosed string interpolation
+    top5PlayersByRun.foreach(player => println(s"${player.name} - ${player.runs} runs\n\"))
+                                                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:249)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+Mar 19, 2024 6:04:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 196
+2024.03.19 06:04:57 ERROR Failed to tokenize input for semantic tokens for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+scala.meta.tokenizers.TokenizeException: <input>:17: error: unclosed string interpolation
+    top5PlayersByRun.foreach(player => println(s"${player.name} - ${player.runs} runs\"))
+                                                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:249)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.19 06:04:58 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:05:02 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:05:03 ERROR Failed to tokenize input for semantic tokens for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+scala.meta.tokenizers.TokenizeException: <input>:18: error: unclosed string literal
+    print("\")
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.19 06:05:05 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:05:15 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:05:16 ERROR Failed to tokenize input for semantic tokens for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+scala.meta.tokenizers.TokenizeException: <input>:24: error: unclosed string literal
+    print("\")
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.19 06:05:18 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:05:27 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:05:29 ERROR Failed to tokenize input for semantic tokens for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+scala.meta.tokenizers.TokenizeException: <input>:32: error: unclosed string literal
+    print("\")
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.19 06:05:30 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:05:56 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:06:28 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:06:29 ERROR Failed to tokenize input for semantic tokens for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+scala.meta.tokenizers.TokenizeException: <input>:12: error: `$$', `$'ident, `$'this, `$'BlockExpr`$'_
+    println(s"\nPlayer with the highest run scored: ${playerWithHighestRun.name} - $\n\n")
+                                                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:649)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:249)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.19 06:06:30 ERROR Failed to tokenize input for semantic tokens for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+scala.meta.tokenizers.TokenizeException: <input>:12: error: unclosed string interpolation
+    println(s"\nPlayer with the highest run scored: ${playerWithHighestRun.name} - ${\n\n")
+                                                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.19 06:06:30 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:06:30 ERROR Failed to tokenize input for semantic tokens for /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+scala.meta.tokenizers.TokenizeException: <input>:12: error: unclosed string interpolation
+    println(s"\nPlayer with the highest run scored: ${playerWithHighestRun.name} - ${\n\n")
+                                                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.19 06:06:32 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:06:35 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:06:39 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:06:48 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:06:50 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala
+2024.03.19 06:06:53 WARN  no build target for: /Users/cellarzero/Sigmoid Training/8.Scala/ScalaMid Assignment/question2.scala

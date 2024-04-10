@@ -1,0 +1,51 @@
+﻿EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,HIRE_DATE,JOB_ID,SALARY,COMMISSION_PCT,MANAGER_ID,DEPARTMENT_ID,ELT_TS,ELT_BY,FILE_NAME
+116,Shelli,Baida,**MASKED**,**MASKED**,24-DEC-05,PU_CLERK,2900.00," - ",114,30,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+117,Sigal,Tobias,**MASKED**,**MASKED**,24-JUL-05,PU_CLERK,2800.00," - ",114,30,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+118,Guy,Himuro,**MASKED**,**MASKED**,15-NOV-06,PU_CLERK,2600.00," - ",114,30,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+119,Karen,Colmenares,**MASKED**,**MASKED**,10-AUG-07,PU_CLERK,2500.00," - ",114,30,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+120,Matthew,Weiss,**MASKED**,**MASKED**,18-JUL-04,ST_MAN,8000.00," - ",100,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+121,Adam,Fripp,**MASKED**,**MASKED**,10-APR-05,ST_MAN,8200.00," - ",100,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+122,Payam,Kaufling,**MASKED**,**MASKED**,01-MAY-03,ST_MAN,7900.00," - ",100,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+123,Shanta,Vollman,**MASKED**,**MASKED**,10-OCT-05,ST_MAN,6500.00," - ",100,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+124,Kevin,Mourgos,**MASKED**,**MASKED**,16-NOV-07,ST_MAN,5800.00," - ",100,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+125,Julia,Nayer,**MASKED**,**MASKED**,16-JUL-05,ST_CLERK,3200.00," - ",120,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+126,Irene,Mikkilineni,**MASKED**,**MASKED**,28-SEP-06,ST_CLERK,2700.00," - ",120,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+127,James,Landry,**MASKED**,**MASKED**,14-JAN-07,ST_CLERK,2400.00," - ",120,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+128,Steven,Markle,**MASKED**,**MASKED**,08-MAR-08,ST_CLERK,2200.00," - ",120,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+129,Laura,Bissot,**MASKED**,**MASKED**,20-AUG-05,ST_CLERK,3300.00," - ",121,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+130,Mozhe,Atkinson,**MASKED**,**MASKED**,30-OCT-05,ST_CLERK,2800.00," - ",121,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+131,James,Marlow,**MASKED**,**MASKED**,16-FEB-05,ST_CLERK,2500.00," - ",121,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+132,TJ,Olson,**MASKED**,**MASKED**,10-APR-07,ST_CLERK,2100.00," - ",121,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+133,Jason,Mallin,**MASKED**,**MASKED**,14-JUN-04,ST_CLERK,3300.00," - ",122,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+134,Michael,Rogers,**MASKED**,**MASKED**,26-AUG-06,ST_CLERK,2900.00," - ",122,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+135,Ki,Gee,**MASKED**,**MASKED**,12-DEC-07,ST_CLERK,2400.00," - ",122,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+136,Hazel,Philtanker,**MASKED**,**MASKED**,06-FEB-08,ST_CLERK,2200.00," - ",122,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+137,Renske,Ladwig,**MASKED**,**MASKED**,14-JUL-03,ST_CLERK,3600.00," - ",123,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+138,Stephen,Stiles,**MASKED**,**MASKED**,26-OCT-05,ST_CLERK,3200.00," - ",123,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+139,John,Seo,**MASKED**,**MASKED**,12-FEB-06,ST_CLERK,2700.00," - ",123,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+140,Joshua,Patel,**MASKED**,**MASKED**,06-APR-06,ST_CLERK,2500.00," - ",123,50,2024-04-10T00:45:10.159624701Z,Assignment,employee_int.csv.gz
+198,Donald,OConnell,**MASKED**,**MASKED**,21-JUN-07,SH_CLERK,2600.00," - ",124,50,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+199,Douglas,Grant,**MASKED**,**MASKED**,13-JAN-08,SH_CLERK,2600.00," - ",124,50,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+200,Jennifer,Whalen,**MASKED**,**MASKED**,17-SEP-03,AD_ASST,4400.00," - ",101,10,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+201,Michael,Hartstein,**MASKED**,**MASKED**,17-FEB-04,MK_MAN,13000.00," - ",100,20,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+202,Pat,Fay,**MASKED**,**MASKED**,17-AUG-05,MK_REP,6000.00," - ",201,20,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+203,Susan,Mavris,**MASKED**,**MASKED**,07-JUN-02,HR_REP,6500.00," - ",101,40,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+204,Hermann,Baer,**MASKED**,**MASKED**,07-JUN-02,PR_REP,10000.00," - ",101,70,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+205,Shelley,Higgins,**MASKED**,**MASKED**,07-JUN-02,AC_MGR,12008.00," - ",101,110,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+206,William,Gietz,**MASKED**,**MASKED**,07-JUN-02,AC_ACCOUNT,8300.00," - ",205,110,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+100,Steven,King,**MASKED**,**MASKED**,17-JUN-03,AD_PRES,24000.00," - "," - ",90,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+101,Neena,Kochhar,**MASKED**,**MASKED**,21-SEP-05,AD_VP,17000.00," - ",100,90,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+102,Lex,De Haan,**MASKED**,**MASKED**,13-JAN-01,AD_VP,17000.00," - ",100,90,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+103,Alexander,Hunold,**MASKED**,**MASKED**,03-JAN-06,IT_PROG,9000.00," - ",102,60,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+104,Bruce,Ernst,**MASKED**,**MASKED**,21-MAY-07,IT_PROG,6000.00," - ",103,60,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+105,David,Austin,**MASKED**,**MASKED**,25-JUN-05,IT_PROG,4800.00," - ",103,60,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+106,Valli,Pataballa,**MASKED**,**MASKED**,05-FEB-06,IT_PROG,4800.00," - ",103,60,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+107,Diana,Lorentz,**MASKED**,**MASKED**,07-FEB-07,IT_PROG,4200.00," - ",103,60,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+108,Nancy,Greenberg,**MASKED**,**MASKED**,17-AUG-02,FI_MGR,12008.00," - ",101,100,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+109,Daniel,Faviet,**MASKED**,**MASKED**,16-AUG-02,FI_ACCOUNT,9000.00," - ",108,100,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+110,John,Chen,**MASKED**,**MASKED**,28-SEP-05,FI_ACCOUNT,8200.00," - ",108,100,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+111,Ismael,Sciarra,**MASKED**,**MASKED**,30-SEP-05,FI_ACCOUNT,7700.00," - ",108,100,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+112,Jose Manuel,Urman,**MASKED**,**MASKED**,07-MAR-06,FI_ACCOUNT,7800.00," - ",108,100,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+113,Luis,Popp,**MASKED**,**MASKED**,07-DEC-07,FI_ACCOUNT,6900.00," - ",108,100,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+114,Den,Raphaely,**MASKED**,**MASKED**,07-DEC-02,PU_MAN,11000.00," - ",100,30,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz
+115,Alexander,Khoo,**MASKED**,**MASKED**,18-MAY-03,PU_CLERK,3100.00," - ",114,30,2024-04-10T00:45:21.025475341Z,Assignment,employee_ext.csv.gz

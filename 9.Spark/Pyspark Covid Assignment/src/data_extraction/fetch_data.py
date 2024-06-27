@@ -2,13 +2,15 @@ import http.client
 import ssl
 import json
 import csv
-from pyspark.sql.types import *
+import yaml
 from pyspark.sql import SparkSession
+from utilities.config_loader import get_config
 
 class InputData(object):
-    def __init__(self, spark,CSVfname = "covid_data.csv"):
+    def __init__(self, spark):
         self.spark = spark
-        self.CSVfname = CSVfname
+        self.config = get_config()
+        self.CSVfname = self.config['csv']['filename']
 
     def __write_to_csv(self, data, filename):
         # Recursive function to flatten nested dictionaries
@@ -39,15 +41,14 @@ class InputData(object):
         print("Data written to", filename)
 
     def loadJSON(self):
-
         # Disable SSL certificate verification
         ssl._create_default_https_context = ssl._create_unverified_context
     
-        conn = http.client.HTTPSConnection("covid-193.p.rapidapi.com")
+        conn = http.client.HTTPSConnection(self.config['api']['url'])
 
         headers = {
-            'X-RapidAPI-Key': "65c3050d7cmsha83ea2591ea05d3p11a4a1jsn5b2f7d9e6464",
-            'X-RapidAPI-Host': "covid-193.p.rapidapi.com"
+            'X-RapidAPI-Key': self.config['api']['key'],
+            'X-RapidAPI-Host': self.config['api']['host']
         }
 
         conn.request("GET", "/statistics", headers=headers)
@@ -68,4 +69,3 @@ class InputData(object):
         covidData = covidData.fillna(0, ["deaths_total", "cases_recovered", "cases_critical", "cases_active"])
 
         return covidData
-
